@@ -15,6 +15,7 @@
 
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
@@ -88,6 +89,7 @@
        </a>
        <span class="tooltip">Ventas online</span>
      </li>
+
 
 
      <li>
@@ -233,7 +235,7 @@
 
 <!--tablas-->
 <div class="container mt-3 bg-white">
-  <h2>Libros</h2>
+  <h2>Usuarios</h2>
   </table>
 </div>
 
@@ -262,22 +264,18 @@
   <table class="table table-hover" id="The_secret_of_the_Asius">
     <thead>
       <tr class="bg-active text-dark">
-        <th >#</th>
-        <th >Nombre</th>
-        <th >Imagen del libro</th>
-        <th>Autor</th>
-        <th>Editorial</th>
-        <th>Publicación</th>
-        <th>Páginas</th>
-        <th>Formato </th>
-        <th>ISBN</th>
-        <th>Género</th>
-        <th>Categoría</th>
-        <th>Documento</th>
-        <th>Idioma</th>
-        <th>Costo</th>
-        <th>Estado</th>
-        <th>Editar</th>
+        <th>#</th>
+        <th>ID</th>
+        <th >Password</th>
+        <th>Imagen</th>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>Correo</th>
+        <th>Telefono </th>
+        <th>Pais</th>
+        <th>Departamento</th>
+        <th>Edad</th>
+        <th>Acciones</th>
       </tr>
     </thead>
     <tbody id="books" style="font-size: 18px; max-width: 35px;">
@@ -306,74 +304,55 @@
               <input type="text" name="username" class="input-line"id="txtNumero"  value="0" readonly>
           </div>
           <div class="input-line-container">
-            <span class="name-input" for="txtNombre">Nombre del libro</span>
-            <input type="text" name="username" class="input-line" id="txtNombre" placeholder="escriba">
+            <span class="name-input" for="txtUsername">Username</span>
+            <input type="text" name="username" class="input-line" id="txtUsername" placeholder="Username">
         </div>
 
         <div class="input-line-container">
-          <span class="name-input" for="txtImagen">Imagen</span>
-          <input type="text" name="username" class="input-line" id="txtImagen" placeholder="escriba">
+          <span class="name-input" for="txtPassword">Password</span>
+          <input type="text" name="username" class="input-line" id="txtPassword" placeholder="Password">
       </div>
 
       <div class="input-line-container">
-        <span class="name-input" for="txtAutor">Autor</span>
-        <input type="text" name="username" class="input-line" id="txtAutor" placeholder="escriba" >
+        <span class="name-input" for="txtPerfil">Foto de perfil</span>
+        <input type="text" name="username" class="input-line" id="txtPerfil" placeholder="Ingrese imagen" >
     </div>
 
     <div class="input-line-container">
-      <span class="name-input" for="txtImagen">Editorial</span>
-      <input type="text" name="username" class="input-line" id="txtEditorial" placeholder="escriba" >
+      <span class="name-input" for="txtNombre">Nombre</span>
+      <input type="text" name="username" class="input-line" id="txtNombre" placeholder="Ingrese su nombre" >
   </div>
 
   <div class="input-line-container">
-    <span class="name-input" for="txtPublicacion">Año de publicación</span>
-    <input type="text" name="username" class="input-line" id="txtPublicacion" placeholder="escriba" >
+    <span class="name-input" for="txtApellidos">Apellidos</span>
+    <input type="text" name="username" class="input-line" id="txtApellidos" placeholder="Ingrese sus apellidos" >
 </div>
 
 <div class="input-line-container">
-  <span class="name-input" for="txtPaginas">Paginas</span>
-  <input type="text" name="username" class="input-line" id="txtPaginas" placeholder="escriba" >
+  <span class="name-input" for="txtCorreo">Ingrese su correo</span>
+  <input type="text" name="username" class="input-line" id="txtCorreo" placeholder="Ingrese su correo" >
 </div>
 
 <div class="input-line-container">
-  <span class="name-input" for="txtFormato">Formato de documento</span>
-  <input type="text" name="username" class="input-line" id="txtFormato" placeholder="escriba" >
+  <span class="name-input" for="txtTelefono">Numero telefonico</span>
+  <input type="text" name="username" class="input-line" id="txtTelefono" placeholder="Ingrese su numero" >
 </div>
 
 <div class="input-line-container">
-  <span class="name-input" for="txtIsbn">ISBN</span>
-  <input type="text" name="username" class="input-line" id="txtIsbn" placeholder="escriba" >
+  <span class="name-input" for="txtPais">Pais</span>
+  <input type="text" name="username" class="input-line" id="txtPais" placeholder="Ingrese su pais" >
 </div>
 
 <div class="input-line-container">
-  <span class="name-input" for="txtGenero">Genero</span>
-  <input type="text" name="username" class="input-line" id="txtGenero" placeholder="escriba" >
+  <span class="name-input" for="txtDepartamento">Departamento</span>
+  <input type="text" name="username" class="input-line" id="txtDepartamento" placeholder="Ingrese su departamento" >
 </div>
 
 <div class="input-line-container">
-  <span class="name-input" for="txtCategoria">Categoria</span>
-  <input type="text" name="username" class="input-line" id="txtCategoria" placeholder="Ingrese la categoria" >
+  <span class="name-input" for="txtEdad">Edad</span>
+  <input type="text" name="username" class="input-line" id="txtEdad" placeholder="Ingrese la categoria" >
 </div>
 
-<div class="input-line-container">
-  <span class="name-input" for="txtDocumento">Documento</span>
-  <input type="text" name="username" class="input-line" id="txtDocumento" placeholder="Ingrese el documento" >
-</div>
-
-<div class="input-line-container">
-  <span class="name-input" for="txtIdioma">Idioma</span>
-  <input type="text" name="username" class="input-line" id="txtIdioma" placeholder="Ingrese el documento" >
-</div>
-
-<div class="input-line-container">
-  <span class="name-input" for="txtCosto">Costo</span>
-  <input type="text" name="username" class="input-line" id="txtCosto" placeholder="Ingrese el documento" >
-</div>
-
-<div class="input-line-container">
-  <span class="name-input" for="txtEstado">Estado</span>
-  <input type="text" name="username" class="input-line" id="txtEstado" placeholder="Ingrese el documento" >
-</div>
 
           </form>
       </div>
@@ -413,7 +392,7 @@
       
     <!-- JavaScript Bundle with Popper -->
    <script src="assets/js/main.js"></script>
-   <script src="assets/js/reg-books.js"></script>
+   <script src="assets/js/reg-users.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   
